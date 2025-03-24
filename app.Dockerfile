@@ -1,6 +1,6 @@
 FROM ghost:2.37.2 as ghost
 
-FROM node:23.10.0 as node
+FROM node:23.10.0-bookworm-slim as node
 
 # Copy manifest files
 COPY --from=ghost /var/lib/ghost /var/lib/ghost
